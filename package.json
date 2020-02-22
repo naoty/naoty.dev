@@ -1,6 +1,9 @@
 {
   "name": "naoty.dev",
   "private": true,
+  "scripts": {
+    "start": "gatsby develop"
+  },
   "dependencies": {
     "gatsby": "^2.19.19",
     "react": "^16.12.0",

@@ -5,3 +5,4 @@ WORKDIR /naoty.dev
 COPY package.json package-lock.json /naoty.dev/
 RUN npm install
 COPY . /naoty.dev/
+CMD ["npm", "start"]
