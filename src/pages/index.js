@@ -1,3 +1,8 @@
 import React from "react";
 
-export default () => <h1>Hello, gatsby.js!!!</h1>;
+export default () => (
+  <>
+    <h1>Hello, gatsby.js!!!</h1>
+    <p>これはダミーテキストです。</p>
+  </>
+);
