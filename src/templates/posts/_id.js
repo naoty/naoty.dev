@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
+import Time from "../../components/time";
 import styles from "./_id.module.css";
 import { Link } from "gatsby";
 
@@ -8,6 +9,9 @@ export default ({ pageContext }) => (
     <article>
       <header className={styles.header}>
         <h1 className={styles.title}>{pageContext.frontmatter.title}</h1>
+        <p className={styles.metadata}>
+          <Time timeString={pageContext.frontmatter.time} />
+        </p>
       </header>
       <section
         className={styles.body}

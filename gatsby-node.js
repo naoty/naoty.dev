@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           node {
             fileAbsolutePath
             frontmatter {
+              time
               title
             }
             html

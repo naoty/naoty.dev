@@ -5,6 +5,7 @@
     "start": "gatsby develop"
   },
   "dependencies": {
+    "dayjs": "^1.8.20",
     "gatsby": "^2.19.19",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-remark-prismjs": "^3.3.31",
