@@ -1,12 +1,17 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
 
-export default () => (
+export default ({
+  data: {
+    site: { siteMetadata }
+  }
+}) => (
   <main className={styles.container}>
     <Helmet>
-      <title>Naoto Kaneko</title>
-      <meta name="description" content="Naoto Kaneko's homepage" />
+      <title>{siteMetadata.title}</title>
+      <meta name="description" content={siteMetadata.description} />
     </Helmet>
 
     <h1 className={styles.title}>Naoto Kaneko</h1>
@@ -23,3 +28,14 @@ export default () => (
     </ul>
   </main>
 );
+
+export const query = graphql`
+  query IndexPageQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;
