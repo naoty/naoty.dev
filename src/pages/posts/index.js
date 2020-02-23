@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../../components/layout";
 
 export default () => (
-  <main>
+  <Layout>
     <h1>Posts</h1>
     <ul>
       <li>
@@ -14,5 +15,5 @@ export default () => (
         <a href="#">BAROCCO MD770を買った</a>
       </li>
     </ul>
-  </main>
+  </Layout>
 );
