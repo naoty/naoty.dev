@@ -1,19 +1,34 @@
 import React from "react";
 import Layout from "../../components/layout";
+import { graphql } from "gatsby";
 
-export default () => (
+export default ({
+  data: {
+    allMarkdownRemark: { edges }
+  }
+}) => (
   <Layout>
     <h1>Posts</h1>
     <ul>
-      <li>
-        <a href="#">pictで複雑な組み合わせを生成する</a>
-      </li>
-      <li>
-        <a href="#">dry-validationで設定ファイルを検証する</a>
-      </li>
-      <li>
-        <a href="#">BAROCCO MD770を買った</a>
-      </li>
+      {edges.map(edge => (
+        <li>
+          <a href="#">{edge.node.frontmatter.title}</a>
+        </li>
+      ))}
     </ul>
   </Layout>
 );
+
+export const query = graphql`
+  query PostsQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: fileAbsolutePath }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`;
