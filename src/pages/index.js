@@ -12,6 +12,10 @@ export default ({
     <Helmet>
       <title>{siteMetadata.title}</title>
       <meta name="description" content={siteMetadata.description} />
+      <meta name="og:title" content={siteMetadata.title} />
+      <meta name="og:description" content={siteMetadata.description} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@naoty_k" />
     </Helmet>
 
     <h1 className={styles.title}>Naoto Kaneko</h1>
