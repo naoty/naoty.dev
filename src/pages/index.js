@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 export default ({
   data: {
@@ -21,7 +21,7 @@ export default ({
     <h1 className={styles.title}>Naoto Kaneko</h1>
     <ul>
       <li>
-        <a href="#">Posts</a>
+        <Link to="/posts/">Posts</Link>
       </li>
       <li>
         <a href="https://github.com/naoty">GitHub</a>
