@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../../components/layout";
+import Tag from "../../../components/tag";
 import { graphql, Link } from "gatsby";
 import styles from "./index.module.css";
 
@@ -15,6 +16,9 @@ export default function TaggedPostsPage({
     return (
       <li key={id}>
         <Link to={`/posts/${id}.html`}>{node.frontmatter.title}</Link>
+        {(node.frontmatter.tags || []).map(tag => (
+          <Tag key={tag} name={tag} />
+        ))}
       </li>
     );
   });
@@ -47,6 +51,7 @@ export const query = graphql`
         node {
           fileAbsolutePath
           frontmatter {
+            tags
             title
           }
         }

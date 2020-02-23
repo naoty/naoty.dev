@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
+import Tag from "../../components/tag";
 import Time from "../../components/time";
 import styles from "./_id.module.css";
 import { Link } from "gatsby";
@@ -11,6 +12,9 @@ export default ({ pageContext }) => (
         <h1 className={styles.title}>{pageContext.frontmatter.title}</h1>
         <p className={styles.metadata}>
           <Time timeString={pageContext.frontmatter.time} />
+          {(pageContext.frontmatter.tags || []).map(tag => (
+            <Tag key={tag} name={tag} />
+          ))}
         </p>
       </header>
       <section

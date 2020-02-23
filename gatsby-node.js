@@ -8,6 +8,7 @@ const createPostPages = async ({ graphql, actions }) => {
           node {
             fileAbsolutePath
             frontmatter {
+              tags
               time
               title
             }
