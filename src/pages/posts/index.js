@@ -22,6 +22,9 @@ export default function PostsPage({
     <Layout>
       <h1 className={styles.title}>Posts</h1>
       <ul>{links}</ul>
+      <nav className={styles.navigation}>
+        <Link to="/">Top</Link>
+      </nav>
     </Layout>
   );
 }
