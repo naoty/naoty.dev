@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import { graphql, Link } from "gatsby";
+import styles from "./index.module.css";
 
 export default function PostsPage({
   data: {
@@ -19,7 +20,7 @@ export default function PostsPage({
 
   return (
     <Layout>
-      <h1>Posts</h1>
+      <h1 className={styles.title}>Posts</h1>
       <ul>{links}</ul>
     </Layout>
   );

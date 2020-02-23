@@ -6,10 +6,10 @@
   width: 32rem;
 }
 
-.container :first-child {
+.container > :first-child {
   margin-top: 0;
 }
 
-.container :last-child {
+.container > :last-child {
   margin-bottom: 0;
 }

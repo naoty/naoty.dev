@@ -1,0 +1,23 @@
+.header > :first-child {
+  margin-top: 0;
+}
+
+.body > :first-child {
+  margin-top: 0;
+}
+
+.body > :last-child {
+  margin-bottom: 0;
+}
+
+.body h1 {
+  font-size: 18px;
+}
+
+.body h2 {
+  font-size: 16px;
+}
+
+.title {
+  border-bottom: 1px solid #000;
+}

@@ -4,9 +4,45 @@
 
 html {
   font-family: Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
   background-color: #ddd;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 2rem 0 1rem 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 2rem 0 1rem 0;
+}
+
+hr,
+p,
+pre,
+ol,
+table,
+ul {
+  margin: 1rem 0 1rem 0;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+pre {
+  overflow-x: scroll;
+}
+
+code {
+  font-family: Menlo, monospace;
+}
+
+hr + * {
+  margin-top: 0;
 }
