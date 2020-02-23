@@ -36,11 +36,17 @@ ul {
 }
 
 pre {
+  line-height: 1rem !important;
   overflow-x: scroll;
 }
 
-code {
-  font-family: Menlo, monospace;
+code,
+pre {
+  font-family: Menlo, monospace !important;
+}
+
+pre > code {
+  font-size: 13px !important;
 }
 
 hr + * {
