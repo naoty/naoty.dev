@@ -28,7 +28,7 @@ export default function PostsPage({
 
 export const query = graphql`
   query PostsQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: fileAbsolutePath }) {
+    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___time }) {
       edges {
         node {
           fileAbsolutePath
