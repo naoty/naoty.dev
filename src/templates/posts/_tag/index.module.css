@@ -1,0 +1,19 @@
+.title {
+  border-bottom: 1px solid #000;
+}
+
+.navigation {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigationItem {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.navigationItem:last-child {
+  margin-right: 0;
+}
