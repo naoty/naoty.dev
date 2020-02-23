@@ -4,7 +4,10 @@ import Layout from "../../components/layout";
 export default ({ pageContext }) => (
   <Layout>
     <article>
-      <h1>{pageContext.frontmatter.title}</h1>
+      <header>
+        <h1>{pageContext.frontmatter.title}</h1>
+      </header>
+      <section dangerouslySetInnerHTML={{ __html: pageContext.html }}></section>
     </article>
   </Layout>
 );
