@@ -9,8 +9,9 @@ export default ({ children }) => (
       query LayoutQuery {
         site {
           siteMetadata {
-            title
             description
+            title
+            url
           }
         }
       }
@@ -20,10 +21,18 @@ export default ({ children }) => (
         <Helmet>
           <title>{siteMetadata.title}</title>
           <meta name="description" content={siteMetadata.description} />
-          <meta name="og:title" content={siteMetadata.title} />
-          <meta name="og:description" content={siteMetadata.description} />
+          <meta property="og:url" content={siteMetadata.url} />
+          <meta property="og:title" content={siteMetadata.title} />
+          <meta property="og:description" content={siteMetadata.description} />
+          <meta
+            property="og:image"
+            content={`${siteMetadata.url}/icons/256x256.png`}
+          />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@naoty_k" />
+          <link rel="icon" type="image/png" href="/icons/favicon.png" />
+          <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+          <link rel="manifest" href="/manifest.json" />
         </Helmet>
         {children}
       </main>

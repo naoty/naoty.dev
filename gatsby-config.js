@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Naoto Kaneko",
-    description: "Naoto Kaneko's homepage"
+    description: "Naoto Kaneko's homepage",
+    url:
+      process.env.NODE_ENV === "production"
+        ? "https://naoty.dev"
+        : "http://0.0.0.0:8000"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
