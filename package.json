@@ -2,6 +2,7 @@
   "name": "naoty.dev",
   "private": true,
   "scripts": {
+    "build": "gatsby build",
     "start": "gatsby develop"
   },
   "dependencies": {
