@@ -1,3 +1,5 @@
+const dayjs = require("dayjs");
+
 module.exports = {
   siteMetadata: {
     title: "Naoto Kaneko",
@@ -33,6 +35,64 @@ module.exports = {
               maxWidth: 300,
               showCaptions: true
             }
+          }
+        ]
+      }
+    },
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                url
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                const date = dayjs(
+                  edge.node.frontmatter.time,
+                  "YYYY-MM-DD:HH:mm:ssZZ"
+                );
+                const basename = edge.node.fileAbsolutePath.split("/").pop();
+                const guid = basename.replace(".md", "");
+                const url = `${site.siteMetadata.url}/posts/${guid}.html`;
+
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date,
+                  guid,
+                  url
+                });
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___time] }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      fileAbsolutePath
+                      frontmatter {
+                        time
+                        title
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/feed.xml",
+            title: "Naoto Kaneko's posts"
           }
         ]
       }
