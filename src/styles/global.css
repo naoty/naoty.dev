@@ -54,6 +54,17 @@ figcaption {
   text-align: center;
 }
 
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000;
+}
+
 hr + * {
   margin-top: 0;
 }
