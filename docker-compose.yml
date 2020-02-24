@@ -6,7 +6,11 @@ services:
     ports:
       - 8000:8000
     volumes:
+      - gatsby_cache:/naoty.dev/.cache
       - node_modules:/naoty.dev/node_modules
+      - public:/naoty.dev/public
       - .:/naoty.dev
 volumes:
+  gatsby_cache:
   node_modules:
+  public:
