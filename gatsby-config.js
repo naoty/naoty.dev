@@ -5,11 +5,12 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "posts",
-        path: `${__dirname}/contents/posts/`
+        name: "contents",
+        path: `${__dirname}/contents/`
       }
     },
     {
@@ -20,6 +21,13 @@ module.exports = {
             resolve: "gatsby-remark-prismjs",
             options: {
               noInlineHighlight: true
+            }
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 300,
+              showCaptions: true
             }
           }
         ]
