@@ -24,7 +24,11 @@ export default function TaggedPostsPage({
   });
 
   return (
-    <Layout>
+    <Layout
+      title={`Naoto Kaneko's posts #${pageContext.tag}`}
+      description={`Naoto Kaneko's posts tagged with #${pageContext.tag}`}
+      path={`/posts/${pageContext.tag}/`}
+    >
       <h1 className={styles.title}>#{pageContext.tag}</h1>
       <ul>{links}</ul>
       <nav>

@@ -23,7 +23,11 @@ export default function PostsPage({
   });
 
   return (
-    <Layout>
+    <Layout
+      title="Naoto Kaneko's posts"
+      description="Naoto Kaneko's all posts"
+      path="/posts/"
+    >
       <h1 className={styles.title}>Posts</h1>
       <ul>{links}</ul>
       <nav className={styles.navigation}>
