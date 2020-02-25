@@ -69,7 +69,8 @@ module.exports = {
                   description: edge.node.excerpt,
                   date,
                   guid,
-                  url
+                  url,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
                 });
               });
             },
@@ -86,6 +87,7 @@ module.exports = {
                         time
                         title
                       }
+                      html
                     }
                   }
                 }
