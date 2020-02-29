@@ -12,11 +12,6 @@ export default class PostTemplate extends Component {
     if (elements.length === 0) return;
 
     mermaid.initialize({ startOnLoad: true });
-    mermaid.parseError = (error, hash) => {
-      console.error(error);
-      console.log(hash);
-    };
-
     this.componentDidUpdate();
   }
 
