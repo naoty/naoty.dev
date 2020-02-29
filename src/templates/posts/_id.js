@@ -18,6 +18,26 @@ export default class PostTemplate extends Component {
     }
   }
 
+  componentDidUpdate() {
+    const texts = [];
+    const pattern = /<div class="mermaid">([\s\S]+?)<\/div>/g;
+
+    let match;
+    while ((match = pattern.exec(this.props.pageContext.html)) !== null) {
+      texts.push(match[1].trim());
+    }
+
+    const elements = document.getElementsByClassName("mermaid");
+    for (let i = 0; i < elements.length; i++) {
+      const text = texts[i];
+      if (text === undefined) return;
+
+      const element = elements[i];
+      const insert = svg => (element.innerHTML = svg);
+      mermaid.mermaidAPI.render(`container-${i}`, text, insert);
+    }
+  }
+
   render() {
     const basename = this.props.pageContext.fileAbsolutePath.split("/").pop();
     const id = basename.replace(".md", "");
