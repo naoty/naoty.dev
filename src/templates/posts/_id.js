@@ -8,9 +8,11 @@ import mermaid from "mermaid";
 
 export default class PostTemplate extends Component {
   componentDidMount() {
+    const elements = document.getElementsByClassName("mermaid");
+    if (elements.length === 0) return;
+
     mermaid.initialize({ startOnLoad: true });
 
-    const elements = document.getElementsByClassName("mermaid");
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
       const insert = svg => (element.innerHTML = svg);
