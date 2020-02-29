@@ -12,12 +12,7 @@ export default class PostTemplate extends Component {
     if (elements.length === 0) return;
 
     mermaid.initialize({ startOnLoad: true });
-
-    for (let i = 0; i < elements.length; i++) {
-      const element = elements[i];
-      const insert = svg => (element.innerHTML = svg);
-      mermaid.mermaidAPI.render(`container-${i}`, element.textContent, insert);
-    }
+    this.componentDidUpdate();
   }
 
   componentDidUpdate() {
