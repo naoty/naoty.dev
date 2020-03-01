@@ -68,7 +68,3 @@ td {
 hr + * {
   margin-top: 0;
 }
-
-.mermaid {
-  text-align: center;
-}
