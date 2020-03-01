@@ -55,8 +55,10 @@ module.exports = async ({ markdownAST }, pluginOptions) => {
   const browser = await puppeteer.launch();
   for (let node of nodes) {
     const index = nodes.indexOf(node);
+    const svg = await renderString(browser, node.value, index);
+
     node.type = "html";
-    node.value = await renderString(browser, node.value, index);
+    node.value = `<figure class="diagram">\n${svg}\n</figure>`;
   }
   await browser.close();
 
