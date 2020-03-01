@@ -22,11 +22,19 @@ const renderString = async (browser, text, key) => {
 
   const result = await page.evaluate(
     (text, key) => {
+      const container = document.getElementById("container");
       return new Promise((resolve, reject) => {
         try {
-          mermaid.initialize({ startOnLoad: true });
-          mermaid.mermaidAPI.render(`container-${key}`, text, svg =>
-            resolve(svg)
+          mermaid.initialize({
+            startOnLoad: true
+          });
+          mermaid.mermaidAPI.render(
+            `diagram-${key}`,
+            text,
+            svg => {
+              resolve(svg);
+            },
+            container
           );
         } catch (e) {
           reject(e);
