@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "dayjs": "^1.8.22",
-    "gatsby": "^2.19.40",
+    "gatsby": "^2.19.41",
     "gatsby-plugin-feed": "^2.3.28",
     "gatsby-plugin-react-helmet": "^3.1.23",
     "gatsby-plugin-sharp": "^2.4.12",
