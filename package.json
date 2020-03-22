@@ -9,7 +9,7 @@
     "dayjs": "^1.8.22",
     "gatsby": "^2.20.2",
     "gatsby-plugin-feed": "^2.3.28",
-    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-react-helmet": "^3.2.0",
     "gatsby-plugin-sharp": "^2.4.12",
     "gatsby-remark-images": "^3.1.49",
     "gatsby-remark-mermaid": "file:plugins/gatsby-remark-mermaid",
