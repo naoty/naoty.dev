@@ -39,6 +39,11 @@ export default function Layout({ title, description, image, path, children }) {
               <link rel="icon" type="image/png" href="/icons/favicon.png" />
               <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
               <link rel="manifest" href="/manifest.json" />
+              <link
+                rel="alternate"
+                type="application/rss+xml"
+                href="/posts/feed.xml"
+              />
             </Helmet>
             {children}
           </main>
