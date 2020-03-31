@@ -94,7 +94,7 @@ module.exports = {
                 }
               }
             `,
-            output: "/feed.xml",
+            output: "/posts/feed.xml",
             title: "Naoto Kaneko's posts"
           }
         ]

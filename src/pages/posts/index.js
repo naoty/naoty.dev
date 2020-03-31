@@ -56,7 +56,7 @@ export default function PostsPage({
             <Link to="/">Top</Link>
           </li>
           <li className={styles.navigationItem}>
-            <a href="/feed.xml">Feed</a>
+            <a href="/posts/feed.xml">Feed</a>
           </li>
         </ul>
       </nav>
