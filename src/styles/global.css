@@ -4,7 +4,8 @@
 
 html {
   color: #333;
-  font-family: Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: Verdana, "Noto Sans", "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
   font-size: 16px;
   line-height: 1.75;
 }
