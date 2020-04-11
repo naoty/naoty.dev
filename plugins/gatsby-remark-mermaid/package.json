@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "mermaid": "8.4.8",
+    "mermaid": "8.5.0",
     "puppeteer": "2.1.1",
     "unist-util-visit": "2.0.2"
   }
