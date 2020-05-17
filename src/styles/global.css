@@ -38,6 +38,12 @@ ul {
   padding-left: 1.5rem;
 }
 
+li > p,
+li > ol,
+li > ul {
+  margin: 0;
+}
+
 pre {
   font-size: 13px !important;
   line-height: 1rem !important;
