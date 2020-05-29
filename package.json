@@ -6,8 +6,8 @@
     "start": "gatsby develop"
   },
   "dependencies": {
-    "dayjs": "1.8.27",
-    "gatsby": "2.22.9",
+    "dayjs": "1.8.28",
+    "gatsby": "2.22.12",
     "gatsby-plugin-feed": "2.5.3",
     "gatsby-plugin-react-helmet": "3.3.2",
     "gatsby-plugin-sharp": "2.6.9",
