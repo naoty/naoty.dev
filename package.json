@@ -7,21 +7,21 @@
   },
   "dependencies": {
     "dayjs": "1.8.28",
-    "gatsby": "2.23.1",
-    "gatsby-plugin-feed": "2.5.4",
-    "gatsby-plugin-react-helmet": "3.3.3",
-    "gatsby-plugin-sharp": "2.6.10",
-    "gatsby-remark-images": "3.3.9",
+    "gatsby": "2.23.3",
+    "gatsby-plugin-feed": "2.5.5",
+    "gatsby-plugin-react-helmet": "3.3.4",
+    "gatsby-plugin-sharp": "2.6.11",
+    "gatsby-remark-images": "3.3.10",
     "gatsby-remark-mermaid": "file:plugins/gatsby-remark-mermaid",
-    "gatsby-remark-prismjs": "3.5.3",
-    "gatsby-source-filesystem": "2.3.10",
-    "gatsby-transformer-remark": "2.8.14",
-    "mermaid": "8.5.1",
+    "gatsby-remark-prismjs": "3.5.4",
+    "gatsby-source-filesystem": "2.3.11",
+    "gatsby-transformer-remark": "2.8.15",
+    "mermaid": "8.5.2",
     "normalize.css": "8.0.1",
     "puppeteer": "3.3.0",
     "prismjs": "1.20.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-helmet": "6.0.0"
+    "react-helmet": "6.1.0"
   }
 }
