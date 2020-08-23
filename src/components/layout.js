@@ -28,6 +28,7 @@ export default function Layout({ title, description, image, path, children }) {
         return (
           <main className={styles.container}>
             <Helmet>
+              <html lang="ja" />
               <title>{metadata.title}</title>
               <meta name="description" content={metadata.description} />
               <meta property="og:url" content={metadata.url} />
