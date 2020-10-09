@@ -7,10 +7,10 @@
   },
   "dependencies": {
     "dayjs": "1.9.1",
-    "gatsby": "2.24.72",
+    "gatsby": "2.24.73",
     "gatsby-plugin-feed": "2.5.14",
-    "gatsby-plugin-react-helmet": "3.3.13",
-    "gatsby-plugin-sharp": "2.6.39",
+    "gatsby-plugin-react-helmet": "3.3.14",
+    "gatsby-plugin-sharp": "2.6.40",
     "gatsby-remark-images": "3.3.33",
     "gatsby-remark-mermaid": "file:plugins/gatsby-remark-mermaid",
     "gatsby-remark-prismjs": "3.5.16",
