@@ -97,6 +97,7 @@ module.exports = {
             output: "/posts/feed.xml",
             title: "Naoto Kaneko's posts",
             site_url: "https://naoty.dev/posts/",
+            image_url: "https://naoty.dev/icons/favicon.png"
           }
         ]
       }
