@@ -95,7 +95,8 @@ module.exports = {
               }
             `,
             output: "/posts/feed.xml",
-            title: "Naoto Kaneko's posts"
+            title: "Naoto Kaneko's posts",
+            site_url: "https://naoty.dev/posts/",
           }
         ]
       }
