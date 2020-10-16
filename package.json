@@ -6,22 +6,22 @@
     "start": "gatsby develop"
   },
   "dependencies": {
-    "dayjs": "1.9.1",
-    "gatsby": "2.24.73",
+    "dayjs": "1.9.3",
+    "gatsby": "2.24.78",
     "gatsby-plugin-feed": "2.5.14",
     "gatsby-plugin-react-helmet": "3.3.14",
-    "gatsby-plugin-sharp": "2.6.40",
-    "gatsby-remark-images": "3.3.33",
+    "gatsby-plugin-sharp": "2.6.42",
+    "gatsby-remark-images": "3.3.34",
     "gatsby-remark-mermaid": "file:plugins/gatsby-remark-mermaid",
     "gatsby-remark-prismjs": "3.5.16",
     "gatsby-source-filesystem": "2.3.34",
-    "gatsby-transformer-remark": "2.8.38",
+    "gatsby-transformer-remark": "2.8.40",
     "mermaid": "8.8.2",
     "normalize.css": "8.0.1",
     "puppeteer": "3.3.0",
-    "prismjs": "1.21.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "prismjs": "1.22.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "react-helmet": "6.1.0"
   }
 }
