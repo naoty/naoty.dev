@@ -14,7 +14,7 @@
     "gatsby-remark-images": "3.4.1",
     "gatsby-remark-mermaid": "file:plugins/gatsby-remark-mermaid",
     "gatsby-remark-prismjs": "3.6.0",
-    "gatsby-source-filesystem": "2.4.1",
+    "gatsby-source-filesystem": "2.4.2",
     "gatsby-transformer-remark": "2.9.2",
     "mermaid": "8.8.3",
     "normalize.css": "8.0.1",
