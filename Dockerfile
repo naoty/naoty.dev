@@ -1,4 +1,4 @@
-FROM node:12.19.0
+FROM node:12.19.1
 RUN apt-get update
 RUN npm install -g gatsby-cli
 WORKDIR /naoty.dev
