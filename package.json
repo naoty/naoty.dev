@@ -6,8 +6,8 @@
     "start": "gatsby develop"
   },
   "dependencies": {
-    "dayjs": "1.9.7",
-    "gatsby": "2.29.2",
+    "dayjs": "1.9.8",
+    "gatsby": "2.29.3",
     "gatsby-plugin-feed": "2.10.0",
     "gatsby-plugin-react-helmet": "3.7.0",
     "gatsby-plugin-sharp": "2.11.2",
@@ -19,7 +19,7 @@
     "mermaid": "8.8.4",
     "normalize.css": "8.0.1",
     "puppeteer": "3.3.0",
-    "prismjs": "1.22.0",
+    "prismjs": "1.23.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-helmet": "6.1.0"
