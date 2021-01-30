@@ -5,6 +5,7 @@ import Time from "../../components/time";
 import styles from "./_id.module.css";
 import { Link } from "gatsby";
 import mermaid from "mermaid";
+import { Helmet } from "react-helmet";
 
 export default class PostTemplate extends Component {
   componentDidMount() {
@@ -45,6 +46,9 @@ export default class PostTemplate extends Component {
         description={this.props.pageContext.frontmatter.description}
         path={`/posts/${id}.html`}
       >
+        <Helmet>
+          <link rel="canonical" href={`https://blog.naoty.dev/${parseInt(id) + 303}/`} />
+        </Helmet>
         <article>
           <header className={styles.header}>
             <h1 className={styles.title}>
