@@ -8,7 +8,7 @@ export default () => (
     <h1 className={styles.title}>Naoto Kaneko</h1>
     <ul>
       <li>
-        <Link to="/posts/">Posts</Link>
+        <a href="https://blog.naoty.dev">Blog</a>
       </li>
       <li>
         <a href="https://github.com/naoty">GitHub</a>
