@@ -18,7 +18,7 @@
     "gatsby-transformer-remark": "2.16.0",
     "mermaid": "8.9.1",
     "normalize.css": "8.0.1",
-    "puppeteer": "3.3.0",
+    "puppeteer": "7.1.0",
     "prismjs": "1.23.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
