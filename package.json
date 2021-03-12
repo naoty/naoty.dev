@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "dayjs": "1.10.4",
-    "gatsby": "2.32.9",
+    "gatsby": "2.32.11",
     "gatsby-plugin-feed": "2.13.1",
     "gatsby-plugin-react-helmet": "3.10.0",
     "gatsby-plugin-sharp": "2.14.3",
@@ -16,7 +16,7 @@
     "gatsby-remark-prismjs": "3.13.0",
     "gatsby-source-filesystem": "2.11.1",
     "gatsby-transformer-remark": "2.16.1",
-    "mermaid": "8.9.1",
+    "mermaid": "8.9.2",
     "normalize.css": "8.0.1",
     "puppeteer": "3.3.0",
     "prismjs": "1.23.0",
