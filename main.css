@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #333;
+  font-family: Verdana, "Noto Sans", "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+body {
+  background-color: #ddd;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 2rem 0 1rem 0;
+}
+
+ul {
+  margin: 1rem 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.container {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.container > :first-child {
+  margin-top: 0;
+}
+
+.container > :last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  border-bottom: 1px solid #000;
+}
+
+@media (max-width: 32rem) {
+  .container {
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 32rem) {
+  .container {
+    border: 1px solid #000;
+    margin: 2rem auto;
+    width: 32rem;
+  }
+}
