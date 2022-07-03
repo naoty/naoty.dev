@@ -14,9 +14,20 @@ body {
   background-color: #ddd;
 }
 
+h1, h2, h3 {
+  margin: 1rem 0;
+}
+
 h1 {
   font-size: 24px;
-  margin: 2rem 0 1rem 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 ul {
@@ -38,6 +49,7 @@ ul {
 }
 
 .title {
+  margin: 2rem 0 1rem 0;
   border-bottom: 1px solid #000;
 }
 
