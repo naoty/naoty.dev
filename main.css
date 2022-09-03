@@ -30,6 +30,10 @@ h3 {
   font-size: 16px;
 }
 
+p {
+  text-align: justify;
+}
+
 ul {
   margin: 1rem 0 1rem 0;
   padding-left: 1.5rem;
@@ -53,16 +57,16 @@ ul {
   border-bottom: 1px solid #000;
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 36rem) {
   .container {
     min-height: 100vh;
   }
 }
 
-@media (min-width: 32rem) {
+@media (min-width: 36rem) {
   .container {
     border: 1px solid #000;
     margin: 2rem auto;
-    width: 32rem;
+    width: 36rem;
   }
 }
